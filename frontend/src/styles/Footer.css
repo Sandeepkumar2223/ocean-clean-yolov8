@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.05); /* Match the glass card */
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-top: auto; /* Pushes footer to the bottom */
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #d1e8ff;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.divider {
+  opacity: 0.3;
+}

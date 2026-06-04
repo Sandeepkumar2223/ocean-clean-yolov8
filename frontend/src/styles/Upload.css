@@ -1,0 +1,70 @@
+.btn-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Make the search icon pulse slightly */
+.pulse {
+  animation: shadow-pulse 2s infinite;
+}
+
+@keyframes shadow-pulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0px #fff); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 5px #fff); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0px #fff); }
+}
+
+.detect-btn {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.clear-btn {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Taming the Preview Image */
+.preview-img {
+  width: 100%;
+  max-width: 500px; /* Adjust this to your preferred size */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain; /* Prevents stretching */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 15px auto;
+  display: block;
+}
+
+/* Taming the Detection Result Image */
+.result-img {
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #00d2ff;
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+  margin-top: 20px;
+}
+
+/* Container for the images to ensure they don't overflow */
+.drop-area {
+  max-width: 100%;
+  overflow: hidden; /* Hide anything that sticks out */
+  padding: 20px;
+}

@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; /* Reduced side padding from 50px to 30px */
+  background-color: transparent; 
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't push the bar wider than the screen */
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents logo from wrapping */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Reduced gap slightly to ensure they all fit */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevents text from breaking into two lines */
+}
+
+.nav-links li a:hover, .nav-logo:hover {
+  color: #4db8ff; 
+  cursor: pointer;
+}

@@ -1,0 +1,101 @@
+/* 1. The Main Wrapper - Forces everything to the absolute center */
+.About-page {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 85vh;        /* Takes up the height of the screen */
+  width: 100%;             /* Takes up the full width */
+  position: relative;
+  z-index: 1; 
+}
+
+/* 2. Glassmorphism Card */
+.about.glass-card {
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 800px;
+  width: 90%; /* Ensures it shrinks on smaller screens */
+  margin: 0 auto; /* Extra fallback to guarantee horizontal centering */
+  text-align: center; 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #d1e8ff; 
+}
+
+.about h3 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Center the list block, but align bullets left */
+.about .feature-list {
+  list-style: none;
+  padding: 0;
+  display: inline-block; 
+  text-align: left;
+}
+
+.about .feature-list li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+/* Cool hover effect on the list items */
+.about .feature-list li:hover {
+  transform: translateX(10px) scale(1.02);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 150, 255, 0.2);
+}
+
+/* --- ANIMATIONS --- */
+
+.float-anim {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered Delays for smooth appearance */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.5s; }
+.delay-4 { animation-delay: 0.7s; }
+.delay-5 { animation-delay: 0.9s; }
+.delay-6 { animation-delay: 1.1s; }
