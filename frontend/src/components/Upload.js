@@ -39,7 +39,8 @@ const Upload = () => {
     
     try {
       setLoading(true);
-      const response = await axios.post("http://127.0.0.1:5000/detect", formData, {
+      // THE FIX: Replaced localhost with your live Hugging Face Server link!
+      const response = await axios.post("https://sandeep2223-ocean-clean-backend.hf.space/detect", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       
